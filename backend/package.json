@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Kushal Gupta",
-  "license": "MIT",
+
   "scripts": {
     "start": "nodemon index.js"
   },
