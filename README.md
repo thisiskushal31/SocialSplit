@@ -4,9 +4,9 @@
 
 ## About SocialSplit
 
-This is a real-time chat application built using React on the frontend and NodeJS/Express/Socket.io on Backend.
+This is a real-time chat application created with NodeJS, Express, and SOCKET.IO on the backend and React on the frontend.   
 
-Users are able to join groups and message other users in real-time.
+Users have the option of joining groups and instant messaging one another. 
 ## Features
 
 - To be Added
