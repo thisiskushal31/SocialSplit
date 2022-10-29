@@ -5,13 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon backend/server.js"
-  }, 
+  },
   "author": "Kushal Gupta",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
-    "dotenv": "^14.2.0",
+    "dotenv": "^16.0.3",
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
