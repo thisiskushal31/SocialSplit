@@ -1,0 +1,6 @@
+.pic {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  padding-top: 5px;
+}
