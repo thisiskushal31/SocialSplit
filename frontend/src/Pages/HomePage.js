@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import {
   Container,
   Box,
-  Text,
+  Image,
   Tabs,
   TabList,
   TabPanels,
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
+import Logo from "../assets/SocialSplit_LogoWhite.svg";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
 
@@ -25,7 +26,7 @@ const HomePage = () => {
 
   return (
     <Container maxW="xl" centerContent>
-      <Box
+      {/* <Box
         d="flex"
         justifyContent="center"
         margin = "3.2rem 0 1rem 0"
@@ -35,15 +36,14 @@ const HomePage = () => {
         w="100%"
         bg="blue.700"
       >
-        <Text
-          color="white"
-          fontSize="4xl"
-          fontFamily="Work sans"
-          fontWeight="bold"
-        >
-          Text-A-Lot
-        </Text>
-      </Box>
+
+      </Box> */}
+      <Image
+        borderRadius="full"
+        boxSize="150px"
+        src={Logo}
+        alt="SocialSplit Logo"
+      />
       <Box bg="blue.50" w="100%" p={4} borderRadius="lg" borderColor="black" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded" colorScheme="cyan" >
           <TabList mb="1em">
