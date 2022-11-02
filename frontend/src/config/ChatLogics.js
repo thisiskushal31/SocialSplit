@@ -1,5 +1,4 @@
 export const getSender = (loggedUser, users) => {
-  //return console.log('id')
   //1on1 chatName
   return users[0]._id === loggedUser._id ? users[1].name : users[0].name;
 };
@@ -12,8 +11,6 @@ export const getSenderFull = (loggedUser, users) => {
 
 //separating user's and sender's text in chatbox
 export const isSameSenderMargin = (messages, m, i, userId) => {
-  // console.log(i === messages.length - 1);
-
   if (
     i < messages.length - 1 &&
     messages[i + 1].sender._id === m.sender._id &&

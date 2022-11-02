@@ -18,7 +18,6 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 
 const ENDPOINT = "http://localhost:5000"; //development
-// const ENDPOINT = "https://textalot.herokuapp.com"; //for deployment -production
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -32,7 +31,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   const toast = useToast();
 
   const { selectedChat, setSelectedChat, user, notification, setNotification } = useContext(ChatContext);
-  //console.log(selectedChat, "selectedChat in chatBox");
 
   const defaultOptions = {
     loop: true,
@@ -89,8 +87,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           },
         };
 
-        //async func -- wont make newMessage empty instantaneously
-        //ui enhancement -- input to be empty as soon as we hit ender/send
         setNewMessage("");
 
         const { data } = await axios.post(
@@ -102,7 +98,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           config
         );
 
-        //setNewMessage("");
         socket.emit("new message", data);
 
         setMessages([...messages, data]);
@@ -140,8 +135,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
     // eslint-disable-next-line
   }, [selectedChat]);
-
-  //console.log(notification, 'notification Bellicon');
 
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {

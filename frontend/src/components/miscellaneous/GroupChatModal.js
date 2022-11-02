@@ -180,9 +180,8 @@ const GroupChatModal = ({ children }) => {
               ))}
             </Box>
             {loading ? (
-              // <ChatLoading />
               <div>Loading...</div>
-            ) : ( //top 4 results
+            ) : (
               searchResult
                 ?.slice(0, 4)
                 .map((user) => (

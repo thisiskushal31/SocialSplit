@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
- 
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [confirmpassword, setConfirmpassword] = useState();
@@ -45,8 +44,6 @@ const Signup = () => {
       });
       return;
     }
-
-    // console.log(name, email);
 
     try {
       const config = {

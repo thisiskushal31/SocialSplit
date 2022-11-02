@@ -10,11 +10,6 @@ const ChatPage = () => {
   const [fetchAgain, setFetchAgain] = useState(false);
   const { user } = useContext(ChatContext);
 
-  /*  const navigate = useNavigate();
-  const isRefreshingRef = useIsRefreshingRef() */
-
-  //navigate('/chats');
-
   return (
     <div style={{ width: "100%" }}>
       

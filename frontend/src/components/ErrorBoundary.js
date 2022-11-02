@@ -19,7 +19,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
         justifyContent="center"
         textAlign="center"
         height="390px"
-        bg="purple.800"
+        bg="teal.800"
         color="yellow.300"
         borderRadius="16px"
         borderWidth="2px"

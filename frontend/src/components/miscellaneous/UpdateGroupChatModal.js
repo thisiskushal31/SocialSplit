@@ -200,8 +200,8 @@ const UpdateGroupChatModal = ({  fetchAgain, setFetchAgain, fetchMessages }) => 
       );
 
       userToBeRemoved._id === user._id ? setSelectedChat() : setSelectedChat(data); 
-      //leaveGroup clause //self UserBadgeItem cross
-
+      //leaveGroup clause 
+      //self UserBadgeItem cross
       setFetchAgain(!fetchAgain);
       fetchMessages(); //prop passsed down from singlechat //opt 
       setLoading(false);

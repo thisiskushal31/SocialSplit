@@ -32,7 +32,6 @@ const Login = () => {
       return;
     }
 
-    // console.log(email, password);
     try {
       const config = {
         headers: { "Content-type": "application/json" },
@@ -44,7 +43,6 @@ const Login = () => {
         config
       );
 
-      // console.log(JSON.stringify(data));
       toast({
         title: "Login Successful",
         status: "success",

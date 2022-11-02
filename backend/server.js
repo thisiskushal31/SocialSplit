@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === "production") {
 // Error Handling middlewares
 app.use(notFound);
 app.use(errorHandler);
- 
+
 /* app.get('/', (req, res) => {
     //console.log('hello from server');
     res.send('Api running');
@@ -94,18 +94,4 @@ io.on("connection", (socket) => {
     socket.leave(userData._id);
   });
 
-});  
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////
-//call join to subscribe the socket to a given channel/room
-
-/* io.on("connection", (socket) => {
-  socket.join("some room");
-}); */
-
-//broadcast to a room from a given socket --  every socket in the room excluding the sender will get the event.
-
-/* io.on("connection", (socket) => {
-  socket.to("some room").emit("some event");
-}); */
+});

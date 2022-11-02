@@ -59,7 +59,6 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.get(`/api/user?search=${search}`, config);
-      //console.log(data, 'searchQuerry keyword response data');
 
       setLoading(false);
       setSearchResult(data);
@@ -82,7 +81,7 @@ const SideDrawer = () => {
   
 
   const accessChatCreateChat = async (userId) => {
-    //console.log(userId); id of selected user
+    //id of selected user
 
     try {
       setLoadingChat(true);
@@ -95,7 +94,8 @@ const SideDrawer = () => {
       const { data } = await axios.post(`/api/chat`, { userId }, config);
 
       if (!chats.find((chat) => chat._id === data._id)) setChats([data, ...chats]); 
-      //already existing check clause //newly created chat above the rest
+      //already existing check clause 
+      //newly created chat above the rest
 
       setSelectedChat(data);
 
