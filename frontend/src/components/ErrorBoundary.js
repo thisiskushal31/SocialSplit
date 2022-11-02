@@ -48,8 +48,8 @@ function ErrorFallback({ error, resetErrorBoundary }) {
           color="black"
           borderColor="black"
           onClick={resetErrorBoundary}
-          _hover={{ background: "pink.500", color: "white" }}
-          _active={{ background: "pink.500", color: "white" }}
+          _hover={{ background: "yellow.500", color: "white" }}
+          _active={{ background: "yellow.500", color: "white" }}
         >
           Continue Texting ➡️
         </Button>
