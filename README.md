@@ -4,12 +4,20 @@
 
 ## About SocialSplit
 
-This is a real-time chat application created with NodeJS, Express, and SOCKET.IO on the backend and React on the frontend.   
+This is a real-time chat application created with *NodeJS, Express, and Socket-IO* on the backend and *React* on the frontend.   
 
 Users have the option of joining groups and instant messaging one another. 
 ## Features
 
-- To be Added
+- Use of Chakra-UI for Modern UI Development.
+- React JS Hooks are used with Functional components.
+- ES8 *async/await* functions used for more readability of code.
+- All the user details, group chats and conversations are stored in the MongoDB Atlas.
+- Login/Signup as well as Logout feature using jwt and bycrpt for hashing the password to be saved in MongoDB Atlas.
+- There will be an error message if the credentials are incorrect and even after a successful request.
+- Suports Real-time One-on-One and Group-Chat communication & notification is supported using Socket-io.
+- Search for chats, create a group, and add or remove participants.
+
 ## Tech Stacks
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![Expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -54,17 +62,17 @@ yarn
 ```   
 **For Backend**   
 ```
-cd backend
 yarn
 ```    
-> Since npm gives some errors in this project, I recommend using yarn as the package manager.
 
-Secondly, we need add `.env` file in `backend` folder in below format
+Secondly, we need add `.env` file in root folder in below format
 ```
-MONGO_URI="<Your_MongoDB_URI>"
-FRONTEND_ORIGIN="http://localhost:3000"
-JWT_TOKEN="<your_jwt_token>"
-```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = <Your-Mongo-URI>
+JWT_SECRET = SuperSecret-Key
+```   
+
 Thirdly, run in local environment
 
 **For Frontend**   
@@ -77,14 +85,19 @@ yarn start
 ``` 
 Runs the app in the development mode.\
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.   
-- Backend running at [http://localhost:4000](http://localhost:4000) to test Login and Register API.
+- Backend running at [http://localhost:5000](http://localhost:5000) to test apis.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 **OR**, 
 
-This [video](https://github.com/thisiskushal31/SocialSplit) shows this project live.
+This [video](https://youtu.be/AIHm5PXM_GA) shows this project live.
+
+## Scope of Improvement
+
+- Better UI for Login/Signup, Alert-Popups, and Chat Window need to be updated to support more and feature like have profile photo, status with more modern look and feel.
+- Better Folder Arrangement for more robust and scalable code.
 
 ## License
 
