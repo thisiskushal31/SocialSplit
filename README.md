@@ -7,6 +7,10 @@
 This is a real-time chat application created with *NodeJS, Express, and Socket-IO* on the backend and *React* on the frontend.   
 
 Users have the option of joining groups and instant messaging one another. 
+
+## SocialSplit Live Previews
+
+![SocialSplit-Live-Preview](./assets/SocialSplit_Demo.gif)
 ## Features
 
 - Use of Chakra-UI for Modern UI Development.
