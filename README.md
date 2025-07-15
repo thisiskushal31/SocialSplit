@@ -106,12 +106,3 @@ This [video](https://youtu.be/AIHm5PXM_GA) shows this project live.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/thisiskushal31/SocialSplit/blob/main/LICENSE) file for details.
-
-## About Me
-
-I am a passionate programmer with a keen interest in Full Stack Web Development, Cloud and DevOps Emerging Technologies, and attempting to solve problems with software.
-
-## Let's Connect
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
-[![github](https://img.shields.io/badge/github-3d4653?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
